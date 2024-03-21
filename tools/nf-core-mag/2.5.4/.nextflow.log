@@ -1,0 +1,232 @@
+Mar-15 13:04:22.738 [main] DEBUG nextflow.cli.Launcher - $> nextflow run /cluster/tufts/biocontainers/nf-core/pipelines/nf-core-mag/2.5.4/2_5_4 --help
+Mar-15 13:04:22.936 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+Mar-15 13:04:22.954 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/cluster/home/yzhang85/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.2,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.0
+Mar-15 13:04:23.012 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-15 13:04:23.015 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-15 13:04:23.018 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Mar-15 13:04:23.032 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar-15 13:04:24.006 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /cluster/tufts/biocontainers/nf-core/pipelines/nf-core-mag/2.5.4/2_5_4/nextflow.config
+Mar-15 13:04:24.012 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /cluster/tufts/biocontainers/nf-core/pipelines/nf-core-mag/2.5.4/2_5_4/nextflow.config
+Mar-15 13:04:24.019 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Mar-15 13:04:25.056 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Mar-15 13:04:25.154 [main] INFO  nextflow.cli.CmdRun - Launching `/cluster/tufts/biocontainers/nf-core/pipelines/nf-core-mag/2.5.4/2_5_4/main.nf` [extravagant_babbage] DSL2 - revision: 24981c8a42
+Mar-15 13:04:25.154 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-validation@1.1.3]
+Mar-15 13:04:25.154 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar-15 13:04:25.155 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-validation@1.1.3]
+Mar-15 13:04:25.155 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-validation version: 1.1.3
+Mar-15 13:04:25.240 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-validation@1.1.3' resolved
+Mar-15 13:04:25.241 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-validation@1.1.3'
+Mar-15 13:04:25.404 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-validation@1.1.3
+Mar-15 13:04:25.446 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /cluster/home/yzhang85/.nextflow/secrets/store.json
+Mar-15 13:04:25.449 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@42aa1324] - activable => nextflow.secret.LocalSecretsProvider@42aa1324
+Mar-15 13:04:25.548 [main] DEBUG nextflow.Session - Session UUID: a953bfc6-e9ec-459e-b185-54b39297437a
+Mar-15 13:04:25.548 [main] DEBUG nextflow.Session - Run name: extravagant_babbage
+Mar-15 13:04:25.548 [main] DEBUG nextflow.Session - Executor pool size: 4
+Mar-15 13:04:25.554 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Mar-15 13:04:25.558 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Mar-15 13:04:25.630 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.0 build 5889
+  Created: 15-10-2023 15:07 UTC (11:07 EDT)
+  System: Linux 3.10.0-862.el7.x86_64
+  Runtime: Groovy 3.0.19 on Java HotSpot(TM) 64-Bit Server VM 15.0.2+7-27
+  Encoding: UTF-8 (UTF-8)
+  Process: 44017@login-prod-02.pax.tufts.edu [10.246.192.70]
+  CPUs: 4 - Mem: 31.2 GB (217 MB) - Swap: 4 GB (3.1 GB)
+Mar-15 13:04:25.824 [main] DEBUG nextflow.Session - Work-dir: /cluster/tufts/biocontainers/tools/nf-core-mag/2.5.4/work [nfs]
+Mar-15 13:04:25.903 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-15 13:04:25.911 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-15 13:04:25.973 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-15 13:04:26.020 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Mar-15 13:04:26.518 [main] DEBUG nextflow.Session - Session start
+Mar-15 13:04:26.523 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /cluster/tufts/biocontainers/tools/nf-core-mag/2.5.4/null/pipeline_info/execution_trace_2024-03-15_13-04-24.txt
+Mar-15 13:04:26.654 [main] DEBUG nextflow.Session - Using default localLib path: /cluster/tufts/biocontainers/nf-core/pipelines/nf-core-mag/2.5.4/2_5_4/lib
+Mar-15 13:04:26.673 [main] DEBUG nextflow.Session - Adding to the classpath library: /cluster/tufts/biocontainers/nf-core/pipelines/nf-core-mag/2.5.4/2_5_4/lib
+Mar-15 13:04:27.224 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-15 13:04:27.255 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters, paramsHelp:paramsHelp]; plugin Id: nf-validation
+Mar-15 13:04:27.442 [main] INFO  nextflow.Nextflow - 
+
+-[2m----------------------------------------------------[0m-
+                                        [0;32m,--.[0;30m/[0;32m,-.[0m
+[0;34m        ___     __   __   __   ___     [0;32m/,-._.--~'[0m
+[0;34m  |\ | |__  __ /  ` /  \ |__) |__         [0;33m}  {[0m
+[0;34m  | \| |       \__, \__/ |  \ |___     [0;32m\`-._,-`-,[0m
+                                        [0;32m`._,._,'[0m
+[0;35m  nf-core/mag v2.5.4[0m
+-[2m----------------------------------------------------[0m-
+Typical pipeline command:
+
+  [0;36mnextflow run nf-core/mag --input samplesheet.csv --genome GRCh37 -profile docker[0m
+
+[4m[1mInput/output options[0m
+  --input                                [2m[string]  [0mInput FastQ files (gzip compressed) or CSV samplesheet file containing information about the samples in the 
+                                                   experiment.[2m[0m 
+  --single_end                           [2m[boolean] [0mSpecifies that the input is single-end reads.[2m[0m
+  --assembly_input                       [2m[string]  [0mAdditional input CSV samplesheet containing information about pre-computed assemblies. When set, both read 
+                                                   pre-processing and assembly are skipped and the pipeline begins at the binning stage.[2m[0m 
+  --outdir                               [2m[string]  [0mThe output directory where the results will be saved. You have to use absolute paths to storage on Cloud 
+                                                   infrastructure.[2m[0m 
+  --email                                [2m[string]  [0mEmail address for completion summary.[2m[0m
+  --multiqc_title                        [2m[string]  [0mMultiQC report title. Printed as page header, used for filename if not otherwise specified.[2m[0m
+
+[4m[1mGeneric options[0m
+  --multiqc_methods_description          [2m[string]  [0mCustom MultiQC yaml file containing HTML including a methods description.[2m[0m
+
+[4m[1mReproducibility options[0m
+  --megahit_fix_cpu_1                    [2m[boolean] [0mFix number of CPUs for MEGAHIT to 1. Not increased with retries.[2m[0m
+  --spades_fix_cpus                      [2m[integer] [0mFix number of CPUs used by SPAdes. Not increased with retries.[2m [default: -1][0m
+  --spadeshybrid_fix_cpus                [2m[integer] [0mFix number of CPUs used by SPAdes hybrid. Not increased with retries.[2m [default: -1][0m
+  --metabat_rng_seed                     [2m[integer] [0mRNG seed for MetaBAT2.[2m [default: 1][0m
+
+[4m[1mQuality control for short reads options[0m
+  --clip_tool                            [2m[string]  [0mSpecify which adapter clipping tool to use.[2m (accepted: fastp, adapterremoval) [default: fastp][0m
+  --save_clipped_reads                   [2m[boolean] [0mSpecify to save the resulting clipped FASTQ files to --outdir.[2m[0m
+  --reads_minlength                      [2m[integer] [0mThe minimum length of reads must have to be retained for downstream analysis.[2m [default: 15][0m
+  --fastp_qualified_quality              [2m[integer] [0mMinimum phred quality value of a base to be qualified in fastp.[2m [default: 15][0m
+  --fastp_cut_mean_quality               [2m[integer] [0mThe mean quality requirement used for per read sliding window cutting by fastp.[2m [default: 15][0m
+  --fastp_save_trimmed_fail              [2m[boolean] [0mSave reads that fail fastp filtering in a separate file. Not used downstream.[2m[0m
+  --adapterremoval_minquality            [2m[integer] [0mThe minimum base quality for low-quality base trimming by AdapterRemoval.[2m [default: 2][0m
+  --adapterremoval_trim_quality_stretch  [2m[boolean] [0mTurn on quality trimming by consecutive stretch of low quality bases, rather than by window.[2m[0m
+  --adapterremoval_adapter1              [2m[string]  [0mForward read adapter to be trimmed by AdapterRemoval.[2m [default: 
+                                                   AGATCGGAAGAGCACACGTCTGAACTCCAGTCACNNNNNNATCTCGTATGCCGTCTTCTGCTTG][0m 
+  --adapterremoval_adapter2              [2m[string]  [0mReverse read adapter to be trimmed by AdapterRemoval for paired end data.[2m [default: 
+                                                   AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT][0m 
+  --host_genome                          [2m[string]  [0mName of iGenomes reference for host contamination removal.[2m[0m
+  --host_fasta                           [2m[string]  [0mFasta reference file for host contamination removal.[2m[0m
+  --host_removal_verysensitive           [2m[boolean] [0mUse the `--very-sensitive` instead of the`--sensitive`setting for Bowtie 2 to map reads against the host 
+                                                   genome.[2m[0m 
+  --host_removal_save_ids                [2m[boolean] [0mSave the read IDs of removed host reads.[2m[0m
+  --save_hostremoved_reads               [2m[boolean] [0mSpecify to save input FASTQ files with host reads removed to --outdir.[2m[0m
+  --keep_phix                            [2m[boolean] [0mKeep reads similar to the Illumina internal standard PhiX genome.[2m[0m
+  --skip_clipping                        [2m[boolean] [0mSkip read preprocessing using fastp or adapterremoval.[2m[0m
+  --save_phixremoved_reads               [2m[boolean] [0mSpecify to save input FASTQ files with phiX reads removed to --outdir.[2m[0m
+  --bbnorm                               [2m[boolean] [0mRun BBnorm to normalize sequence depth.[2m[0m
+  --bbnorm_target                        [2m[integer] [0mSet BBnorm target maximum depth to this number.[2m [default: 100][0m
+  --bbnorm_min                           [2m[integer] [0mSet BBnorm minimum depth to this number.[2m [default: 5][0m
+  --save_bbnorm_reads                    [2m[boolean] [0mSave normalized read files to output directory.[2m[0m
+
+[4m[1mQuality control for long reads options[0m
+  --skip_adapter_trimming                [2m[boolean] [0mSkip removing adapter sequences from long reads.[2m[0m
+  --longreads_min_length                 [2m[integer] [0mDiscard any read which is shorter than this value.[2m [default: 1000][0m
+  --longreads_keep_percent               [2m[integer] [0mKeep this percent of bases.[2m [default: 90][0m
+  --longreads_length_weight              [2m[integer] [0mThe higher the more important is read length when choosing the best reads.[2m [default: 10][0m
+  --keep_lambda                          [2m[boolean] [0mKeep reads similar to the ONT internal standard Escherichia virus Lambda genome.[2m[0m
+  --save_lambdaremoved_reads             [2m[boolean] [0mSpecify to save input FASTQ files with lamba reads removed  to --outdir.[2m[0m
+  --save_porechop_reads                  [2m[boolean] [0mSpecify to save the resulting clipped FASTQ files to --outdir.[2m[0m
+  --save_filtlong_reads                  [2m[boolean] [0mSpecify to save the resulting length filtered FASTQ files to --outdir.[2m[0m
+
+[4m[1mTaxonomic profiling options[0m
+  --centrifuge_db                        [2m[string]  [0mDatabase for taxonomic binning with centrifuge.[2m[0m
+  --kraken2_db                           [2m[string]  [0mDatabase for taxonomic binning with kraken2.[2m[0m
+  --krona_db                             [2m[string]  [0mDatabase for taxonomic binning with krona[2m[0m
+  --skip_krona                           [2m[boolean] [0mSkip creating a krona plot for taxonomic binning.[2m[0m
+  --cat_db                               [2m[string]  [0mDatabase for taxonomic classification of metagenome assembled genomes. Can be either a zipped file or a 
+                                                   directory containing the extracted output of such.[2m[0m 
+  --cat_db_generate                      [2m[boolean] [0mGenerate CAT database.[2m[0m
+  --save_cat_db                          [2m[boolean] [0mSave the CAT database generated when specified by `--cat_db_generate`.[2m[0m
+  --cat_official_taxonomy                [2m[boolean] [0mOnly return official taxonomic ranks (Kingdom, Phylum, etc.) when running CAT.[2m[0m
+  --skip_gtdbtk                          [2m[boolean] [0mSkip the running of GTDB, as well as the automatic download of the database[2m[0m
+  --gtdb_db                              [2m[string]  [0mSpecify the location of a GTDBTK database. Can be either an uncompressed directory or a `.tar.gz` archive. If 
+                                                   not specified will be downloaded for you when GTDBTK or binning QC is not skipped.[2m [default: 
+                                                   https://data.ace.uq.edu.au/public/gtdb/data/releases/release214/214.1/auxillary_files/gtdbtk_r214_data.tar.gz][0m 
+  --gtdb_mash                            [2m[string]  [0mSpecify the location of a GTDBTK mash database. If missing, GTDB-Tk will skip the ani_screening step[2m[0m
+  --gtdbtk_min_completeness              [2m[number]  [0mMin. bin completeness (in %) required to apply GTDB-tk classification.[2m [default: 50.0][0m
+  --gtdbtk_max_contamination             [2m[number]  [0mMax. bin contamination (in %) allowed to apply GTDB-tk classification.[2m [default: 10.0][0m
+  --gtdbtk_min_perc_aa                   [2m[number]  [0mMin. fraction of AA (in %) in the MSA for bins to be kept.[2m [default: 10.0][0m
+  --gtdbtk_min_af                        [2m[number]  [0mMin. alignment fraction to consider closest genome.[2m [default: 0.65][0m
+  --gtdbtk_pplacer_cpus                  [2m[number]  [0mNumber of CPUs used for the by GTDB-Tk run tool pplacer.[2m [default: 1.0][0m
+  --gtdbtk_pplacer_scratch               [2m[boolean] [0mReduce GTDB-Tk memory consumption by running pplacer in a setting writing to disk.[2m [default: true][0m
+  --genomad_db                           [2m[string]  [0mDatabase for virus classification with geNomad[2m[0m
+
+[4m[1mAssembly options[0m
+  --coassemble_group                     [2m[boolean] [0mCo-assemble samples within one group, instead of assembling each sample separately.[2m[0m
+  --spades_options                       [2m[string]  [0mAdditional custom options for SPAdes.[2m[0m
+  --megahit_options                      [2m[string]  [0mAdditional custom options for MEGAHIT.[2m[0m
+  --skip_spades                          [2m[boolean] [0mSkip Illumina-only SPAdes assembly.[2m[0m
+  --skip_spadeshybrid                    [2m[boolean] [0mSkip SPAdes hybrid assembly.[2m[0m
+  --skip_megahit                         [2m[boolean] [0mSkip MEGAHIT assembly.[2m[0m
+  --skip_quast                           [2m[boolean] [0mSkip metaQUAST.[2m[0m
+
+[4m[1mGene prediction and annotation options[0m
+  --skip_prodigal                        [2m[boolean] [0mSkip Prodigal gene prediction[2m[0m
+  --skip_prokka                          [2m[boolean] [0mSkip Prokka genome annotation.[2m[0m
+  --skip_metaeuk                         [2m[boolean] [0mSkip MetaEuk gene prediction and annotation[2m[0m
+  --metaeuk_mmseqs_db                    [2m[string]  [0mA string containing the name of one of the databases listed in the [mmseqs2 
+                                                   documentation](https://github.com/soedinglab/MMseqs2/wiki#downloading-databases). This database will be 
+                                                   downloaded and formatted for eukaryotic genome annotation. Incompatible with --metaeuk_db.[2m[0m 
+  --metaeuk_db                           [2m[string]  [0mPath to either a local fasta file of protein sequences, or to a directory containing an mmseqs2-formatted 
+                                                   database, for annotation of eukaryotic genomes.[2m[0m 
+  --save_mmseqs_db                       [2m[boolean] [0mSave the downloaded mmseqs2 database specified in `--metaeuk_mmseqs_db`.[2m[0m
+
+[4m[1mVirus identification options[0m
+  --run_virus_identification             [2m[boolean] [0mRun virus identification.[2m[0m
+  --genomad_min_score                    [2m[number]  [0mMinimum geNomad score for a sequence to be considered viral[2m [default: 0.7][0m
+  --genomad_splits                       [2m[integer] [0mNumber of groups that geNomad's MMSeqs2 databse should be split into (reduced memory requirements)[2m 
+                                                   [default: 1][0m 
+
+[4m[1mBinning options[0m
+  --binning_map_mode                     [2m[string]  [0mDefines mapping strategy to compute co-abundances for binning, i.e. which samples will be mapped against the 
+                                                   assembly.[2m [default: group][0m 
+  --skip_binning                         [2m[boolean] [0mSkip metagenome binning entirely[2m[0m
+  --skip_metabat2                        [2m[boolean] [0mSkip MetaBAT2 Binning[2m[0m
+  --skip_maxbin2                         [2m[boolean] [0mSkip MaxBin2 Binning[2m[0m
+  --skip_concoct                         [2m[boolean] [0mSkip CONCOCT Binning[2m[0m
+  --min_contig_size                      [2m[integer] [0mMinimum contig size to be considered for binning and for bin quality check.[2m [default: 1500][0m
+  --min_length_unbinned_contigs          [2m[integer] [0mMinimal length of contigs that are not part of any bin but treated as individual genome.[2m [default: 
+                                                   1000000][0m 
+  --max_unbinned_contigs                 [2m[integer] [0mMaximal number of contigs that are not part of any bin but treated as individual genome.[2m [default: 
+                                                   100][0m 
+  --bowtie2_mode                         [2m[string]  [0mBowtie2 alignment mode[2m[0m
+  --save_assembly_mapped_reads           [2m[boolean] [0mSave the output of mapping raw reads back to assembled contigs[2m[0m
+  --bin_domain_classification            [2m[boolean] [0mEnable domain-level (prokaryote or eukaryote) classification of bins using Tiara. Processes which are 
+                                                   domain-specific will then only receive bins matching the domain requirement.[2m[0m 
+  --tiara_min_length                     [2m[integer] [0mMinimum contig length for Tiara to use for domain classification. For accurate classification, should be 
+                                                   longer than 3000 bp.[2m [default: 3000][0m 
+
+[4m[1mBin quality check options[0m
+  --skip_binqc                           [2m[boolean] [0mDisable bin QC with BUSCO or CheckM.[2m[0m
+  --binqc_tool                           [2m[string]  [0mSpecify which tool for bin quality-control validation to use.[2m (accepted: busco, checkm) [default: 
+                                                   busco][0m 
+  --busco_db                             [2m[string]  [0mDownload URL for BUSCO lineage dataset, or path to a tar.gz archive, or local directory containing already 
+                                                   downloaded and unpacked lineage datasets.[2m[0m 
+  --busco_auto_lineage_prok              [2m[boolean] [0mRun BUSCO with automated lineage selection, but ignoring eukaryotes (saves runtime).[2m[0m
+  --save_busco_db                        [2m[boolean] [0mSave the used BUSCO lineage datasets provided via `--busco_db`.[2m[0m
+  --busco_clean                          [2m[boolean] [0mEnable clean-up of temporary files created during BUSCO runs.[2m[0m
+  --checkm_db                            [2m[string]  [0mPath to local folder containing already downloaded and uncompressed CheckM database.[2m[0m
+  --save_checkm_data                     [2m[boolean] [0mSave the used CheckM reference files downloaded when not using --checkm_db parameter.[2m[0m
+  --refine_bins_dastool                  [2m[boolean] [0mTurn on bin refinement using DAS Tool.[2m[0m
+  --refine_bins_dastool_threshold        [2m[number]  [0mSpecify single-copy gene score threshold for bin refinement.[2m [default: 0.5][0m
+  --postbinning_input                    [2m[string]  [0mSpecify which binning output is sent for downstream annotation, taxonomic classification, bin quality control 
+                                                   etc.[2m (accepted: raw_bins_only, refined_bins_only, both) [default: raw_bins_only][0m 
+  --run_gunc                             [2m[boolean] [0mTurn on GUNC genome chimerism checks[2m[0m
+  --gunc_db                              [2m[string]  [0mSpecify a path to a pre-downloaded GUNC dmnd database file[2m[0m
+  --gunc_database_type                   [2m[string]  [0mSpecify which database to auto-download if not supplying own[2m (accepted: progenomes, gtdb) [default: 
+                                                   progenomes][0m 
+  --gunc_save_db                         [2m[boolean] [0mSave the used GUNC reference files downloaded when not using --gunc_db parameter.[2m[0m
+
+[4m[1mAncient DNA assembly[0m
+  --ancient_dna                          [2m[boolean] [0mTurn on/off the ancient DNA subworfklow[2m[0m
+  --pydamage_accuracy                    [2m[number]  [0mPyDamage accuracy threshold[2m [default: 0.5][0m
+  --skip_ancient_damagecorrection        [2m[boolean] [0mdeactivate damage correction of ancient contigs using variant and consensus calling[2m[0m
+  --freebayes_ploidy                     [2m[integer] [0mPloidy for variant calling[2m [default: 1][0m
+  --freebayes_min_basequality            [2m[integer] [0mminimum base quality required for variant calling[2m [default: 20][0m
+  --freebayes_minallelefreq              [2m[number]  [0mminimum minor allele frequency for considering variants[2m [default: 0.33][0m
+  --bcftools_view_high_variant_quality   [2m[integer] [0mminimum genotype quality for considering a variant high quality[2m [default: 30][0m
+  --bcftools_view_medium_variant_quality [2m[integer] [0mminimum genotype quality for considering a variant medium quality[2m [default: 20][0m
+  --bcftools_view_minimal_allelesupport  [2m[integer] [0mminimum number of bases supporting the alternative allele[2m [default: 3][0m
+
+[2m !! Hiding 29 params, use --validationShowHiddenParams to show them !!
+[0m-[2m----------------------------------------------------[0m-
+If you use nf-core/mag for your analysis please cite:
+
+* The pipeline publication
+  https://doi.org/10.1093/nargab/lqac007
+
+* The pipeline
+  https://doi.org/10.5281/zenodo.3589527
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+  https://github.com/nf-core/mag/blob/master/CITATIONS.md
+-[2m----------------------------------------------------[0m-
