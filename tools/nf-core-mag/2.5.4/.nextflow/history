@@ -1,1 +1,0 @@
-2024-03-15 13:04:25	-	extravagant_babbage	-	24981c8a42eb48a8635bb17bd5ec70b0	a953bfc6-e9ec-459e-b185-54b39297437a	nextflow run /cluster/tufts/biocontainers/nf-core/pipelines/nf-core-mag/2.5.4/2_5_4 --help
