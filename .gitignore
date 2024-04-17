@@ -10,3 +10,7 @@ testdata/
 tests/
 tools_bak/
 workshop/
+tools/hyper-shell
+tools/nf-core
+tools/Fiji
+tools/apptainer
