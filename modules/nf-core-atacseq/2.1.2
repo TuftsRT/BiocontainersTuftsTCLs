@@ -24,6 +24,7 @@ module-whatis   nf-core atacseq pipeline
 module-whatis   https://nf-co.re/atacseq
 set pkg nf-core-atacseq 
 set ver 2.1.2
+setenv NXF_SINGULARITY_CACHEDIR /cluster/tufts/biocontainers/nf-core/singularity-images
 
 proc ModulesHelp { } {
   puts stderr "\tThis module adds nf-core-atacseq v2.1.2 to the environment. "

@@ -24,6 +24,7 @@ module-whatis   nf-core eager pipeline
 module-whatis   https://nf-co.re/eager
 set pkg nf-core-eager 
 set ver 2.5.1
+setenv NXF_SINGULARITY_CACHEDIR /cluster/tufts/biocontainers/nf-core/singularity-images
 
 proc ModulesHelp { } {
   puts stderr "\tThis module adds nf-core-eager v2.5.1 to the environment. "

@@ -24,6 +24,7 @@ module-whatis   nf-core pangenome pipeline
 module-whatis   https://nf-co.re/pangenome
 set pkg nf-core-pangenome 
 set ver 1.1.1
+setenv NXF_SINGULARITY_CACHEDIR /cluster/tufts/biocontainers/nf-core/singularity-images
 
 proc ModulesHelp { } {
   puts stderr "\tThis module adds nf-core-pangenome v1.1.1 to the environment. "

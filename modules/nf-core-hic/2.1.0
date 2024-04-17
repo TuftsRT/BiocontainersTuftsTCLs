@@ -24,6 +24,7 @@ module-whatis   nf-core hic pipeline
 module-whatis   https://nf-co.re/hic
 set pkg nf-core-hic 
 set ver 2.1.0
+setenv NXF_SINGULARITY_CACHEDIR /cluster/tufts/biocontainers/nf-core/singularity-images
 
 proc ModulesHelp { } {
   puts stderr "\tThis module adds nf-core-hic v2.1.0 to the environment. "

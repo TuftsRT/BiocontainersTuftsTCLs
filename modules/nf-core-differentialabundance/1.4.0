@@ -24,6 +24,7 @@ module-whatis   nf-core differentialabundance pipeline
 module-whatis   https://nf-co.re/differentialabundance
 set pkg nf-core-differentialabundance 
 set ver 1.4.0
+setenv NXF_SINGULARITY_CACHEDIR /cluster/tufts/biocontainers/nf-core/singularity-images
 
 proc ModulesHelp { } {
   puts stderr "\tThis module adds nf-core-differentialabundance v1.4.0 to the environment. "

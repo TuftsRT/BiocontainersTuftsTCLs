@@ -31,7 +31,7 @@ proc ModulesHelp { } {
 }
 
 prepend-path PATH            /cluster/tufts/biocontainers/tools/rmats2sashimiplot/2.0.4/bin
-prepend-path SINGULARITY_BIND /cluster
+prepend-path --delim=, SINGULARITY_BIND /cluster/tufts
 
 #
 # list conflict modules that cannot be loaded together

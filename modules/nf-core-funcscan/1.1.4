@@ -24,6 +24,7 @@ module-whatis   nf-core funcscan pipeline
 module-whatis   https://nf-co.re/funcscan
 set pkg nf-core-funcscan 
 set ver 1.1.4
+setenv NXF_SINGULARITY_CACHEDIR /cluster/tufts/biocontainers/nf-core/singularity-images
 
 proc ModulesHelp { } {
   puts stderr "\tThis module adds nf-core-funcscan v1.1.4 to the environment. "

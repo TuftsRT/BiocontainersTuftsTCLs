@@ -31,7 +31,7 @@ proc ModulesHelp { } {
 }
 
 prepend-path PATH            /cluster/tufts/biocontainers/tools/cellranger-atac/2.0.0/bin
-prepend-path SINGULARITY_BIND /cluster
+prepend-path --delim=, SINGULARITY_BIND /cluster/tufts
 
 #
 # list conflict modules that cannot be loaded together

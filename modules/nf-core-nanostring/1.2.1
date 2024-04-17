@@ -24,6 +24,7 @@ module-whatis   nf-core nanostring pipeline
 module-whatis   https://nf-co.re/nanostring
 set pkg nf-core-nanostring 
 set ver 1.2.1
+setenv NXF_SINGULARITY_CACHEDIR /cluster/tufts/biocontainers/nf-core/singularity-images
 
 proc ModulesHelp { } {
   puts stderr "\tThis module adds nf-core-nanostring v1.2.1 to the environment. "

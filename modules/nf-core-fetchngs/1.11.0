@@ -24,6 +24,7 @@ module-whatis   nf-core fetchngs pipeline
 module-whatis   https://nf-co.re/fetchngs
 set pkg nf-core-fetchngs 
 set ver 1.11.0
+setenv NXF_SINGULARITY_CACHEDIR /cluster/tufts/biocontainers/nf-core/singularity-images
 
 proc ModulesHelp { } {
   puts stderr "\tThis module adds nf-core-fetchngs v1.11.0 to the environment. "

@@ -24,6 +24,7 @@ module-whatis   nf-core viralrecon pipeline
 module-whatis   https://nf-co.re/viralrecon
 set pkg nf-core-viralrecon 
 set ver 2.6.0
+setenv NXF_SINGULARITY_CACHEDIR /cluster/tufts/biocontainers/nf-core/singularity-images
 
 proc ModulesHelp { } {
   puts stderr "\tThis module adds nf-core-viralrecon v2.6.0 to the environment. "

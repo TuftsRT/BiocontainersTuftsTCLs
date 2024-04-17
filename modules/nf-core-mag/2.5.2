@@ -24,6 +24,7 @@ module-whatis   nf-core mag pipeline
 module-whatis   https://nf-co.re/mag
 set pkg nf-core-mag 
 set ver 2.5.2
+setenv NXF_SINGULARITY_CACHEDIR /cluster/tufts/biocontainers/nf-core/singularity-images
 
 proc ModulesHelp { } {
   puts stderr "\tThis module adds nf-core-mag v2.5.2 to the environment. "

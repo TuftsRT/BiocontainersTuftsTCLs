@@ -24,6 +24,7 @@ module-whatis   nf-core smrnaseq pipeline
 module-whatis   https://nf-co.re/smrnaseq
 set pkg nf-core-smrnaseq 
 set ver 2.3.0
+setenv NXF_SINGULARITY_CACHEDIR /cluster/tufts/biocontainers/nf-core/singularity-images
 
 proc ModulesHelp { } {
   puts stderr "\tThis module adds nf-core-smrnaseq v2.3.0 to the environment. "

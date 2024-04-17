@@ -24,6 +24,7 @@ module-whatis   nf-core nanoseq pipeline
 module-whatis   https://nf-co.re/nanoseq
 set pkg nf-core-nanoseq 
 set ver 3.1.0
+setenv NXF_SINGULARITY_CACHEDIR /cluster/tufts/biocontainers/nf-core/singularity-images
 
 proc ModulesHelp { } {
   puts stderr "\tThis module adds nf-core-nanoseq v3.1.0 to the environment. "

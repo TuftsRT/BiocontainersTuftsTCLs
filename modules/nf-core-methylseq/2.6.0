@@ -24,6 +24,7 @@ module-whatis   nf-core methylseq pipeline
 module-whatis   https://nf-co.re/methylseq
 set pkg nf-core-methylseq 
 set ver 2.6.0
+setenv NXF_SINGULARITY_CACHEDIR /cluster/tufts/biocontainers/nf-core/singularity-images
 
 proc ModulesHelp { } {
   puts stderr "\tThis module adds nf-core-methylseq v2.6.0 to the environment. "

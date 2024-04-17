@@ -34,7 +34,7 @@ proc ModulesHelp { } {
 # prepend-path and set SINGULARITY_BIND
 #
 prepend-path PATH            /cluster/tufts/biocontainers/tools/signalp6/6.0-slow/bin
-prepend-path --delim=, SINGULARITY_BIND /cluster 
+prepend-path --delim=, SINGULARITY_BIND /cluster/tufts
 prepend-path --delim=, SINGULARITY_BIND  /cluster/tufts/biocontainers/datasets/signalp6_slow_sequential/signalp-6-package/models/sequential_models_signalp6:/usr/local/lib/python3.10/dist-packages/signalp/model_weights/sequential_models_signalp6
 
 #

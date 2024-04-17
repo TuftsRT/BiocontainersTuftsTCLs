@@ -24,6 +24,7 @@ module-whatis   nf-core metatdenovo pipeline
 module-whatis   https://nf-co.re/metatdenovo
 set pkg nf-core-metatdenovo 
 set ver 1.0.0
+setenv NXF_SINGULARITY_CACHEDIR /cluster/tufts/biocontainers/nf-core/singularity-images
 
 proc ModulesHelp { } {
   puts stderr "\tThis module adds nf-core-metatdenovo v1.0.0 to the environment. "

@@ -24,6 +24,7 @@ module-whatis   nf-core rnafusion pipeline
 module-whatis   https://nf-co.re/rnafusion
 set pkg nf-core-rnafusion 
 set ver 3.0.1
+setenv NXF_SINGULARITY_CACHEDIR /cluster/tufts/biocontainers/nf-core/singularity-images
 
 proc ModulesHelp { } {
   puts stderr "\tThis module adds nf-core-rnafusion v3.0.1 to the environment. "

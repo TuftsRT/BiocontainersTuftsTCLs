@@ -24,6 +24,7 @@ module-whatis   nf-core rnasplice pipeline
 module-whatis   https://nf-co.re/rnasplice
 set pkg nf-core-rnasplice 
 set ver 1.0.3
+setenv NXF_SINGULARITY_CACHEDIR /cluster/tufts/biocontainers/nf-core/singularity-images
 
 proc ModulesHelp { } {
   puts stderr "\tThis module adds nf-core-rnasplice v1.0.3 to the environment. "

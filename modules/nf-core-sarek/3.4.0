@@ -24,6 +24,7 @@ module-whatis   nf-core sarek pipeline
 module-whatis   https://nf-co.re/sarek
 set pkg nf-core-sarek 
 set ver 3.4.0
+setenv NXF_SINGULARITY_CACHEDIR /cluster/tufts/biocontainers/nf-core/singularity-images
 
 proc ModulesHelp { } {
   puts stderr "\tThis module adds nf-core-sarek v3.4.0 to the environment. "
